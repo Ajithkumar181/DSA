@@ -209,16 +209,7 @@ Here’s a list of key **patterns** and **related problems** in greedy that conn
 
 ---
 
-## 🌲 4. **Tree-Based Encoding Pattern (Specific to Huffman)**
 
-### 🔑 Core Idea:
-
-* Build a **binary tree** using greedy strategy.
-* Assign **shorter codes to more frequent items**.
-
-### 🧠 Special Focus:
-
-* This is unique to **Huffman** but appears in **data compression** concepts.
 
 ---
 
