@@ -151,12 +151,90 @@ Most greedy interval problems:
 
 ---
 
-## ✅ Next Step?
+Great question! Understanding **when to sort by start time vs end time** is crucial for solving greedy interval problems correctly.
 
-Would you like:
+---
 
-* 📘 A curated Google Sheet of greedy interval problems?
-* 🧠 Visual explanations of each problem?
-* 💻 Template code (C++/Python) for each pattern?
+## ✅ **Summary:**
 
-Let me know how you want to continue!
+| Problem Type                                                                      | Sort By                                         | Why?                                                    |
+| --------------------------------------------------------------------------------- | ----------------------------------------------- | ------------------------------------------------------- |
+| **Select Max Non-overlapping Intervals** (e.g., Activity Selection, Pair Chain)   | **End time** (`interval[1]`)                    | Greedily pick earliest finishing to leave room for more |
+| **Check for Overlaps / Merge Intervals**                                          | **Start time** (`interval[0]`)                  | Need to line up intervals to detect overlaps            |
+| **Room Allocation / Interval Scheduling with resources** (e.g., Meeting Rooms II) | **Start time**, and use a **heap of end times** | Process in order of arrival, track ongoing events       |
+
+---
+
+## 📘 **Detailed Guide**
+
+---
+
+### 🔹 1. **Sort by End Time**
+
+#### When?
+
+* You want to **maximize the number of non-overlapping intervals**.
+* Classic examples:
+
+  * **Activity Selection**
+  * **Maximum length of pair chain** (like Leetcode 646)
+
+#### Why?
+
+* If you pick the interval that ends earliest, you **leave maximum space** for future intervals.
+* It’s a **greedy choice** that gives the globally optimal result.
+
+#### ✅ Example:
+
+```cpp
+intervals = [[1,2], [2,3], [3,4]]
+sort by end: [[1,2], [2,3], [3,4]]
+→ Select [1,2], then [3,4]
+```
+
+---
+
+### 🔹 2. **Sort by Start Time**
+
+#### When?
+
+* You want to **merge overlapping intervals**.
+* You're concerned about **processing intervals in order**, like assigning rooms.
+* Classic examples:
+
+  * **Merge Intervals** (Leetcode 56)
+  * **Meeting Rooms I & II**
+
+#### Why?
+
+* Sorting by start time makes it easy to **line up intervals** in time order.
+* Once sorted, you can compare current start time with previous end to:
+
+  * Detect overlap
+  * Use or free a room
+
+#### ✅ Example:
+
+```cpp
+intervals = [[1,3],[2,6],[8,10]]
+sort by start: [[1,3],[2,6],[8,10]]
+→ Merge [1,3] with [2,6] → [1,6]
+```
+
+---
+
+## 🔁 Bonus: Combined Logic (Meeting Rooms II)
+
+* You **sort by start time**, but use a **min-heap of end times** to decide room usage.
+* This lets you track **earliest finishing meeting** while processing meetings in order.
+
+---
+
+## 🧠 Key Mnemonic:
+
+> **"Select more? End time. Merge/check overlaps? Start time."**
+
+---
+
+Let me know if you'd like a visual diagram or want to go through a specific problem with this logic!
+
