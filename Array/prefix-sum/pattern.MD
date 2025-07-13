@@ -65,6 +65,41 @@ Sum of subarray [L...R] = prefix[R] - prefix[L-1];
 | Count Number of Nice Subarrays | [Leetcode 1248](https://leetcode.com/problems/count-number-of-nice-subarrays/)                             |
 
 ---
+🔁 Add These to Truly Master Prefix Sum
+🔥 1. Leetcode 974 – Subarray Sums Divisible by K
+Use modulo trick with prefix sums
+
+Hash map + modulo frequency count
+
+🔗 https://leetcode.com/problems/subarray-sums-divisible-by-k/
+
+🔥 2. Leetcode 325 – Maximum Size Subarray Sum Equals k
+Like 560, but asks for length, not count
+
+Requires storing first occurrence of prefix sum
+
+🔗 https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/
+
+🔥 3. Leetcode 437 – Path Sum III (Tree + Prefix Sum)
+Applies prefix sum logic in a tree
+
+Helps master non-array prefix use
+
+🔗 https://leetcode.com/problems/path-sum-iii/
+
+🔥 4. Leetcode 930 – Binary Subarrays With Sum
+Binary array with fixed sum → prefix + sliding window
+
+🔗 https://leetcode.com/problems/binary-subarrays-with-sum/
+
+🔥 5. Leetcode 327 – Count of Range Sum
+Hard level
+
+Prefix + modified merge sort
+
+Truly tests mastery!
+
+🔗 https://leetcode.com/problems/count-of-range-sum/
 
 ## ✅ 2. **SLIDING WINDOW TECHNIQUE**
 
