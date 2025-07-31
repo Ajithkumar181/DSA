@@ -160,7 +160,7 @@ Here are the **Top 5 Most Frequently Asked Interview Problems** based on the **J
 * **Given**: `n` jobs with deadlines and profits
 * **Task**: Schedule jobs to maximize total profit
 * **Difficulty**: Medium
-* **Why Important**: This is the **standard template problem** that forms the foundation of the entire pattern.
+* **Why Important**: Thisx is the **standard template problem** that forms the foundation of the entire pattern.
 
 ---
 
