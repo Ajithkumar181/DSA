@@ -2,6 +2,8 @@ Absolutely! Here's a **complete and structured DSA syllabus** tailored specifica
 
 ---
 
+Leetcode patterns-https://leetcode.com/discuss/post/7045794/complete-interview-prep-roadmap-for-leet-6xgg/
+
 ## 📚 **DSA Syllabus for Placements (2024–25)**
 
 Organized into **8 core topics** with subtopics and problem types.
